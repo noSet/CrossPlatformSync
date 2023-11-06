@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0-windows10.0.17763.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+	<IsTransformWebConfigDisabled>true</IsTransformWebConfigDisabled>
+	<OutputType>WinExe</OutputType>
+	<UserSecretsId>0e408762-7f0f-455a-a940-6d35e2df0fb5</UserSecretsId>
+	<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="H.NotifyIcon" Version="2.0.118" />
+    <PackageReference Include="Microsoft.Toolkit.Uwp.Notifications" Version="7.1.3" />
+    <PackageReference Include="Serilog" Version="3.0.1" />
+    <PackageReference Include="Serilog.AspNetCore" Version="7.0.0" />
+    <PackageReference Include="Serilog.Sinks.File" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="copy_icon.ico" />
+  </ItemGroup>
+
+</Project>
