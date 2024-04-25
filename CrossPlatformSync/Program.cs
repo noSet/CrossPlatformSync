@@ -3,9 +3,7 @@ using Microsoft.Toolkit.Uwp.Notifications;
 using Serilog;
 using System.Drawing;
 using System.Reflection;
-using System.Resources;
 using System.Runtime.InteropServices;
-using System.Runtime.Versioning;
 
 namespace CrossPlatformSync;
 
@@ -30,13 +28,13 @@ public class Program
             trayIcon.ContextMenu = new PopupMenu
             {
                 Items =
-            {
-                new PopupMenuItem("ÍË³ö", (_, _) =>
                 {
-                    trayIcon.Dispose();
-                    Environment.Exit(0);
-                }),
-            },
+                    new PopupMenuItem("ÍË³ö", (_, _) =>
+                    {
+                        trayIcon.Dispose();
+                        Environment.Exit(0);
+                    }),
+                },
             };
 
             trayIcon.Create();
